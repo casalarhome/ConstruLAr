@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CONSTRU LAR | Materiais de construção — peça seu orçamento pelo WhatsApp</title>
+<meta name="description" content="CONSTRU LAR: tudo para sua obra em um só lugar. Cimento, argamassa, hidráulica, elétrica, ferramentas e acabamento. Solicite orçamento pelo WhatsApp.">
+<meta name="theme-color" content="#0F2A5C">
+<meta property="og:title" content="CONSTRU LAR — Materiais de construção">
+<meta property="og:description" content="Tudo para sua obra em um só lugar. Peça seu orçamento pelo WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+ <div class="wrap bar">
+  <a class="brand" href="#inicio" aria-label="CONSTRU LAR — início"><img class="logo-img" src="assets/logo/logo-constru-lar.png" alt="Logotipo CONSTRU LAR"><span class="n">CONSTRU LAR</span></a>
+  <nav class="nav" id="nav" aria-label="Principal">
+   <a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#categorias">Categorias</a><a href="#ofertas">Ofertas</a><a href="#sobre">Sobre nós</a><a href="#contato">Contato</a>
+  </nav>
+  <a class="ig" data-ig aria-label="Instagram da CONSTRU LAR"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+  <a class="btn btn-red" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8s-.4-.1-.6.100-.6.800-.8 1-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.300 5.300 0 0 0 1.100 2.800 12 12 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg> WhatsApp</a>
+  <button id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">☰</button>
+ </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <div class="wrap">
+  <div>
+   <h1>Tudo para sua obra em um só lugar!</h1>
+   <p>Encontre os materiais que você precisa para construir, reformar e transformar.</p>
+   <div class="cta"><a class="btn btn-red" href="#produtos">Conheça nossos produtos</a><a class="btn btn-line" data-wa>Faça seu pedido</a></div>
+  </div>
+  <div class="stack" aria-hidden="true"><span>🧱</span><span>🔨</span><span>🚿</span><span>🔧</span><span>🏗️</span><span>💡</span></div>
+ </div>
+</section>
+
+<section id="produtos" style="padding-bottom:24px">
+ <div class="wrap">
+  <h2 class="title">Nossos produtos</h2>
+  <p class="sub">Pesquise pelo nome ou escolha uma categoria. Em qualquer produto, toque em “Solicitar orçamento” para falar direto com a loja.</p>
+ </div>
+</section>
+<div class="tools" id="categorias"><div class="wrap">
+ <form class="search" role="search" onsubmit="return false">
+  <input id="busca" type="search" placeholder="Buscar: cimento, chuveiro, cano PVC, martelo…" aria-label="Buscar produtos" autocomplete="off">
+ </form>
+ <div id="chips" role="group" aria-label="Categorias"></div>
+</div></div>
+<section style="padding-top:0"><div class="wrap">
+ <p id="contador" role="status" aria-live="polite"></p>
+ <div class="grid" id="grid"></div>
+ <div id="vazio" hidden><h3>Nenhum produto encontrado</h3><p>Confira a digitação ou escolha outra categoria. Se não achou o que procura, consulte a loja.</p>
+  <button class="btn btn-navy" id="limpar" type="button">Limpar busca e filtros</button></div>
+ <p class="nota">Produtos, descrições e preços exibidos são demonstrativos e podem ser alterados. Confirme valores e disponibilidade no orçamento.</p>
+</div></section>
+
+<section class="alt" id="ofertas"><div class="wrap reveal">
+ <h2 class="title">Ofertas e destaques</h2>
+ <p class="sub">Seleção de produtos em promoção e dos mais procurados.</p>
+ <div class="grid" id="ofertas-grid"></div>
+</div></section>
+
+<section class="about" id="sobre"><div class="wrap reveal">
+ <div>
+  <h2 class="title">CONSTRU LAR — sua parceira na construção!</h2>
+  <p class="sub" style="margin-bottom:0">Tudo o que você precisa para sua obra, reforma ou manutenção em um só lugar.</p>
+ </div>
+ <div class="pill" aria-hidden="true"><span>🧱</span><span>🔨</span><span>🚰</span><span>💡</span></div>
+</div></section>
+
+<section class="insta"><div class="wrap reveal">
+ <h2 class="title">Acompanhe a CONSTRU LAR!</h2>
+ <p class="sub">Fique por dentro das novidades, produtos, ofertas e dicas para sua obra.</p>
+ <a class="btn btn-red" data-ig><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg> Conheça nosso Instagram</a>
+</div></section>
+</main>
+
+<footer id="contato"><div class="wrap">
+ <div class="fgrid">
+  <div><a class="brand" href="#inicio" style="padding:0 0 10px"><img class="logo-img" src="assets/logo/logo-constru-lar.png" alt="Logotipo CONSTRU LAR"><span class="n">CONSTRU LAR</span></a>
+   <p>Sua parceira na construção.</p></div>
+  <div><h4>Navegação</h4><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#categorias">Categorias</a><a href="#ofertas">Ofertas</a><a href="#sobre">Sobre nós</a></div>
+  <div><h4>Contato</h4><a data-wa>WhatsApp: <span data-wa-text></span></a><a data-ig>Instagram @constru.lar</a></div>
+ </div>
+ <div class="copy">© <span id="ano"></span> CONSTRU LAR. Todos os direitos reservados.</div>
+</div></footer>
+<a class="fab" data-wa aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8s-.4-.1-.6.100-.6.800-.8 1-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.300 5.300 0 0 0 1.100 2.800 12 12 0 0 0 4.600 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<script src="js/config.js"></script><script src="js/products.js"></script><script src="js/main.js"></script>
+</body></html>
